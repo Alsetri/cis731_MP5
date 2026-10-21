@@ -1,0 +1,55 @@
+26/10/20 03:34:44 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/10/20 03:34:44 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/20 03:34:45 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+
+=== 1. No duplicate window keys (the exactly-once property) ===
+  [PASS] QA: one row per 60s window key — 46 rows, 46 distinct window_start
+  [PASS] QB: one row per 60s window key — 46 rows, 46 distinct window_start
+  [PASS] QC: one row per (sliding window, token) key — 1655 rows, 1655 distinct keys
+  [PASS] Quarantine: one row per record_id — 57 rows, 57 distinct record_id
+
+=== 2. Quarantine set matches the independent implementation ===
+  [PASS] same records quarantined by Spark and by plain Python — 57 records, identical sets
+  [PASS] quarantine count matches the generator's ground truth — sink 57, injected 57
+
+=== 3. Watermark accounting is order-independent ===
+  [PASS] every emitted window exists in the batch ground truth — phantom windows []
+  [PASS] no emitted window has MORE records than the batch truth — a window over-counted — would indicate double-processing
+  [PASS] every un-emitted window is one the watermark had not passed — 0 closed windows were never emitted: []
+  [PASS] Spark's drop count equals the per-window deficit — engine reported 4, window deficit 4
+  [PASS] emitted + dropped + held + quarantined == total — 875 + 4 + 64 + 57 = 1000 vs 1000
+  [PASS] admitted + quarantined == total — 943 + 57 = 1000 vs 1000
+
+=== 3b. Independent prediction of the drop set ===
+  [PASS] predicted number of closed windows matches the sink — simulator 46, sink 46
+  [PASS] predicted final watermark matches the engine — simulator 2026-10-19 14:46:15+00:00, engine 2026-10-19 14:46:15+00:00
+  [PASS] predicted drop count agrees with the engine to within 1 record — simulator 5, engine 4, residual 1
+  [PASS] predicted emitted record count agrees to within 1 record — simulator 874, sink 875
+         note: 1 record of 943 sits on the late-data filter boundary (window end within ~5s of the watermark) and the prediction and the engine disagree on it. Documented, not tuned away.
+
+=== 4. Restart continuity (checkpoint commit log is the truth) ===
+  [PASS] qa_tumbling_60s: commit log contiguous 0..62 — 63 batches committed
+  [PASS] qa_tumbling_60s: no committed batch reprocessed after the restart
+  [PASS] qa_tumbling_60s: restart resumed at the batch after the last commit — pre ends 9, post starts 10
+  [PASS] qb_tokens_60s: commit log contiguous 0..60 — 61 batches committed
+  [PASS] qb_tokens_60s: no committed batch reprocessed after the restart
+  [PASS] qb_tokens_60s: restart resumed at the batch after the last commit — pre ends 8, post starts 9
+  [PASS] qc_sliding_5m_1m: commit log contiguous 0..62 — 63 batches committed
+  [PASS] qc_sliding_5m_1m: no committed batch reprocessed after the restart
+  [PASS] qc_sliding_5m_1m: restart resumed at the batch after the last commit — pre ends 9, post starts 10
+  [PASS] quarantine: commit log contiguous 0..39 — 40 batches committed
+  [PASS] quarantine: no committed batch reprocessed after the restart
+  [PASS] quarantine: restart resumed at the batch after the last commit — pre ends 8, post starts 10
+         note: quarantine committed batch(es) [9] whose progress row never reached metrics.jsonl (driver killed before the next drain). Output is intact; only the telemetry row is missing.
+
+=== 5. Aggregate sanity ===
+  tokens emitted: 14991
+  record-weighted mean ingest latency: 8.858s
+  top-10 terms (summed over sliding windows): trap=13656, drill=7306, boom=5381, bap=4017, funk=3376, hyphy=2852, crunk=2707, memphis=2236, atlanta=2102, compton=1898
+
+============================================================
+RECONCILIATION: PASS
+============================================================
+26/10/20 03:34:58 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors

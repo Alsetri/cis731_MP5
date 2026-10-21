@@ -1,0 +1,11 @@
+v1
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-35946431-f516-4160-b25a-f3dbd78d0a88-c000.snappy.parquet","size":1031,"isDir":false,"modificationTime":1792467131740,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-5f627748-f2e6-443c-9ef1-97982c2ab32a-c000.snappy.parquet","size":2489,"isDir":false,"modificationTime":1792467134236,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-56bf67f0-e6a1-49c0-9da3-b9d87d63c29b-c000.snappy.parquet","size":2631,"isDir":false,"modificationTime":1792467136376,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-f9ff1df2-ecb2-42a0-9783-e1aa637a1be5-c000.snappy.parquet","size":2653,"isDir":false,"modificationTime":1792467138068,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-f93cdf09-bb09-464d-b892-cf1490a14d6e-c000.snappy.parquet","size":1031,"isDir":false,"modificationTime":1792467139208,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-858b3a91-accd-4a00-8262-04cba5f5e9ad-c000.snappy.parquet","size":2639,"isDir":false,"modificationTime":1792467140628,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-4a40164b-e29e-42eb-a274-9d084b106281-c000.snappy.parquet","size":2640,"isDir":false,"modificationTime":1792467144327,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-852646c9-73c1-4bd5-9f3b-ed75dcfc4812-c000.snappy.parquet","size":2652,"isDir":false,"modificationTime":1792467146932,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-e0ca772b-47f2-471f-b7dd-7118f776fb99-c000.snappy.parquet","size":2645,"isDir":false,"modificationTime":1792467150264,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/quarantine/part-00000-c77390a9-7b7e-4508-9276-59f772f59cab-c000.snappy.parquet","size":2550,"isDir":false,"modificationTime":1792467152880,"blockReplication":1,"blockSize":33554432,"action":"add"}

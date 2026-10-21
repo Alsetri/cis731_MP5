@@ -1,0 +1,3 @@
+v1
+{"path":"file:///home/claude/mp5/out/qa_tumbling_60s/part-00000-204e2d34-3187-4d00-93fc-60df7398855b-c000.snappy.parquet","size":2279,"isDir":false,"modificationTime":1792467177716,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/qa_tumbling_60s/part-00001-1b54570c-b089-4703-9360-7db33a3bf327-c000.snappy.parquet","size":2279,"isDir":false,"modificationTime":1792467177680,"blockReplication":1,"blockSize":33554432,"action":"add"}

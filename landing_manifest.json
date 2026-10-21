@@ -1,0 +1,22 @@
+{
+  "generator": "make_landing_zone.py",
+  "seed": 20261020,
+  "files": 40,
+  "records_per_file": 25,
+  "records_total": 1000,
+  "violations_injected": 57,
+  "violations_by_kind": {
+    "unknown_license": 8,
+    "unlisted_source": 13,
+    "blank_source": 8,
+    "overlong_chunk": 13,
+    "blank_text": 8,
+    "reversed_interval": 7
+  },
+  "violation_rate_requested": 0.05,
+  "event_time_start": "2026-10-19T14:00:00+00:00",
+  "event_time_end": "2026-10-19T14:49:01+00:00",
+  "file_partition_order": "arrival",
+  "synthetic": true,
+  "note": "Seeded replay fixture standing in for the MP 3 corpus snapshot; conforms to the PS 4 CorpusChunk contract."
+}

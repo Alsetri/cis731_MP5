@@ -1,0 +1,122 @@
+{
+  "queries": {
+    "qa_tumbling_60s": {
+      "batches_logged": 64,
+      "batches_with_input": 40,
+      "input_rows_total": 1000,
+      "inputRowsPerSecond": {
+        "mean": 29.8,
+        "median": 26.63,
+        "max": 112.11
+      },
+      "processedRowsPerSecond": {
+        "mean": 15.04,
+        "median": 15.0,
+        "max": 26.26
+      },
+      "batchDuration_ms": {
+        "median": 1667,
+        "p95": 3013,
+        "max": 6822
+      },
+      "stateOperators.numRowsTotal": {
+        "median": 5,
+        "max": 6
+      },
+      "rows_dropped_by_watermark": 4
+    },
+    "qb_tokens_60s": {
+      "batches_logged": 62,
+      "batches_with_input": 40,
+      "input_rows_total": 1000,
+      "inputRowsPerSecond": {
+        "mean": 27.13,
+        "median": 17.3,
+        "max": 66.31
+      },
+      "processedRowsPerSecond": {
+        "mean": 15.1,
+        "median": 15.31,
+        "max": 23.15
+      },
+      "batchDuration_ms": {
+        "median": 1633,
+        "p95": 6422,
+        "max": 7934
+      },
+      "stateOperators.numRowsTotal": {
+        "median": 5,
+        "max": 6
+      },
+      "rows_dropped_by_watermark": 4
+    },
+    "qc_sliding_5m_1m": {
+      "batches_logged": 64,
+      "batches_with_input": 40,
+      "input_rows_total": 1000,
+      "inputRowsPerSecond": {
+        "mean": 27.23,
+        "median": 20.86,
+        "max": 81.7
+      },
+      "processedRowsPerSecond": {
+        "mean": 14.44,
+        "median": 14.1,
+        "max": 25.48
+      },
+      "batchDuration_ms": {
+        "median": 1773,
+        "p95": 5420,
+        "max": 6826
+      },
+      "stateOperators.numRowsTotal": {
+        "median": 315,
+        "max": 352
+      },
+      "rows_dropped_by_watermark": 102
+    },
+    "quarantine": {
+      "batches_logged": 40,
+      "batches_with_input": 39,
+      "input_rows_total": 975,
+      "inputRowsPerSecond": {
+        "mean": 20.92,
+        "median": 25.0,
+        "max": 27.53
+      },
+      "processedRowsPerSecond": {
+        "mean": 21.28,
+        "median": 21.82,
+        "max": 35.11
+      },
+      "batchDuration_ms": {
+        "median": 1146,
+        "p95": 4405,
+        "max": 4542
+      },
+      "stateOperators.numRowsTotal": {
+        "median": null,
+        "max": null
+      },
+      "rows_dropped_by_watermark": 0
+    }
+  },
+  "environment": {
+    "python": "3.13.16",
+    "platform": "Linux-6.18.44-fc-v139-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "pyspark": "3.5.1",
+    "java": "openjdk version \"21.0.12.1\" 2026-08-18",
+    "accelerator": "none (CPU baseline, INV-14/INV-15)",
+    "pip_freeze_sha256": "40df0f6da681ac9b68096b1daefde471e3ea6064d6c912cf250f5c80c3986d9c",
+    "source_sha256": "8e701cd7e6256f6c7e6e91d5f17879bd885154f75ee7ac8052e69ee945fd7206",
+    "source_files": [
+      "src/analyze_lateness.py",
+      "src/contracts.py",
+      "src/make_landing_zone.py",
+      "src/metrics_summary.py",
+      "src/reconcile.py",
+      "src/streaming_job.py"
+    ]
+  }
+}

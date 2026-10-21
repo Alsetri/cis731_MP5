@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+replay/*.staging
+
+# Checkpoint internals: the RocksDB/HDFS state-store delta files are binary,
+# number in the thousands, and are not evidence of anything a reader can check.
+# The commit and offset logs ARE the evidence for restart continuity, so those
+# are tracked. A reproduction regenerates state from scratch via run_all.sh.
+checkpoints/*/state/
+checkpoints/*/sources/

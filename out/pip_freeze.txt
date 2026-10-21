@@ -1,0 +1,4 @@
+py4j==0.10.9.7
+pyspark==3.5.1
+setuptools==69.5.1
+wheel==0.43.0

@@ -1,0 +1,164 @@
+26/10/20 03:32:34 WARN Utils: Your hostname, vm resolves to a loopback address: 127.0.0.1; using 192.0.2.2 instead (on interface eth0)
+26/10/20 03:32:34 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+26/10/20 03:32:35 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+26/10/20 03:32:39 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/10/20 03:32:39 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/10/20 03:32:39 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+26/10/20 03:32:39 WARN ResolveWriteToStream: spark.sql.adaptive.enabled is not supported in streaming DataFrames/Datasets and will be disabled.
+[post_restart] watermark=180 seconds maxFilesPerTrigger=1 kill_after=none
+26/10/20 03:32:40 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+[Stage 0:>                                                          (0 + 1) / 1]26/10/20 03:32:42 WARN HDFSBackedStateStoreProvider: The state for version 10 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+[Stage 0:>    (0 + 1) / 1][Stage 2:>    (0 + 1) / 2][Stage 3:>    (0 + 0) / 1]26/10/20 03:32:43 WARN HDFSBackedStateStoreProvider: The state for version 10 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+[Stage 0:>    (0 + 1) / 1][Stage 2:==>  (1 + 1) / 2][Stage 3:>    (0 + 0) / 1]                                                                                26/10/20 03:32:44 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 4579 milliseconds
+[Stage 2:==>  (1 + 1) / 2][Stage 3:>    (0 + 1) / 1][Stage 5:>    (0 + 0) / 1]                                                                                26/10/20 03:32:44 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 5192 milliseconds
+26/10/20 03:32:44 WARN HDFSBackedStateStoreProvider: The state for version 9 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/10/20 03:32:44 WARN HDFSBackedStateStoreProvider: The state for version 9 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+[Stage 4:>                                                          (0 + 2) / 2][Stage 4:>                  (0 + 2) / 2][Stage 6:>                  (0 + 0) / 2]                                                                                26/10/20 03:32:45 WARN HDFSBackedStateStoreProvider: The state for version 10 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/10/20 03:32:45 WARN HDFSBackedStateStoreProvider: The state for version 10 doesn't exist in loadedMaps. Reading snapshot file and delta files if needed...Note that this is normal for the first batch of starting query.
+26/10/20 03:32:45 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 6429 milliseconds
+26/10/20 03:32:46 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 6828 milliseconds
+26/10/20 03:32:46 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2417 milliseconds
+[Stage 9:>                                                          (0 + 2) / 2]                                                                                26/10/20 03:32:47 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 3014 milliseconds
+26/10/20 03:32:48 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1549 milliseconds
+[Stage 11:=============================>                            (1 + 1) / 2]                                                                                26/10/20 03:32:48 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2925 milliseconds
+26/10/20 03:32:49 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2933 milliseconds
+26/10/20 03:32:49 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1458 milliseconds
+[Stage 16:>                                                         (0 + 2) / 2]                                                                                26/10/20 03:32:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2416 milliseconds
+26/10/20 03:32:51 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1496 milliseconds
+26/10/20 03:32:51 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2288 milliseconds
+26/10/20 03:32:51 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2316 milliseconds
+26/10/20 03:32:52 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2237 milliseconds
+[Stage 26:>                                                         (0 + 2) / 2][Stage 26:=============================>                            (1 + 1) / 2]                                                                                26/10/20 03:32:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2218 milliseconds
+26/10/20 03:32:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1437 milliseconds
+26/10/20 03:32:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2046 milliseconds
+26/10/20 03:32:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2134 milliseconds
+[Stage 33:>                                                         (0 + 2) / 2]                                                                                26/10/20 03:32:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1581 milliseconds
+26/10/20 03:32:55 WARN GarbageCollectionMetrics: To enable non-built-in garbage collector(s) List(G1 Concurrent GC), users should configure it(them) to spark.eventLog.gcMetrics.youngGenerationGarbageCollectors or spark.eventLog.gcMetrics.oldGenerationGarbageCollectors
+26/10/20 03:32:55 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1943 milliseconds
+26/10/20 03:32:56 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1914 milliseconds
+26/10/20 03:32:56 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1827 milliseconds
+26/10/20 03:32:56 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1902 milliseconds
+26/10/20 03:32:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1542 milliseconds
+26/10/20 03:32:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1464 milliseconds
+26/10/20 03:32:58 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1715 milliseconds
+26/10/20 03:32:58 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1833 milliseconds
+26/10/20 03:32:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1328 milliseconds
+26/10/20 03:32:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1876 milliseconds
+26/10/20 03:33:00 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1544 milliseconds
+26/10/20 03:33:00 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1490 milliseconds
+26/10/20 03:33:01 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1682 milliseconds
+26/10/20 03:33:01 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1659 milliseconds
+26/10/20 03:33:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1609 milliseconds
+26/10/20 03:33:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1111 milliseconds
+26/10/20 03:33:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1566 milliseconds
+26/10/20 03:33:03 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1305 milliseconds
+26/10/20 03:33:03 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 2005 milliseconds
+26/10/20 03:33:04 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1534 milliseconds
+26/10/20 03:33:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1358 milliseconds
+26/10/20 03:33:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1180 milliseconds
+26/10/20 03:33:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1632 milliseconds
+26/10/20 03:33:06 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1441 milliseconds
+26/10/20 03:33:06 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1069 milliseconds
+26/10/20 03:33:06 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1741 milliseconds
+26/10/20 03:33:08 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1383 milliseconds
+26/10/20 03:33:08 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1528 milliseconds
+26/10/20 03:33:08 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1804 milliseconds
+26/10/20 03:33:09 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1936 milliseconds
+26/10/20 03:33:09 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1307 milliseconds
+26/10/20 03:33:11 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1061 milliseconds
+26/10/20 03:33:11 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1480 milliseconds
+26/10/20 03:33:11 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1720 milliseconds
+26/10/20 03:33:11 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1895 milliseconds
+26/10/20 03:33:12 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1042 milliseconds
+26/10/20 03:33:12 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1054 milliseconds
+26/10/20 03:33:12 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1002 milliseconds
+26/10/20 03:33:14 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1206 milliseconds
+26/10/20 03:33:14 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1525 milliseconds
+26/10/20 03:33:14 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1877 milliseconds
+26/10/20 03:33:15 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1343 milliseconds
+26/10/20 03:33:17 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1051 milliseconds
+26/10/20 03:33:17 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1290 milliseconds
+26/10/20 03:33:17 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1480 milliseconds
+26/10/20 03:33:17 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1856 milliseconds
+26/10/20 03:33:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1193 milliseconds
+26/10/20 03:33:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1460 milliseconds
+26/10/20 03:33:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1657 milliseconds
+26/10/20 03:33:20 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1826 milliseconds
+26/10/20 03:33:21 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1068 milliseconds
+26/10/20 03:33:23 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1198 milliseconds
+26/10/20 03:33:23 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1551 milliseconds
+26/10/20 03:33:23 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1073 milliseconds
+26/10/20 03:33:26 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1253 milliseconds
+26/10/20 03:33:26 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1474 milliseconds
+26/10/20 03:33:26 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1739 milliseconds
+26/10/20 03:33:29 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1056 milliseconds
+26/10/20 03:33:29 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1332 milliseconds
+26/10/20 03:33:29 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1523 milliseconds
+26/10/20 03:33:29 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1644 milliseconds
+26/10/20 03:33:30 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1027 milliseconds
+26/10/20 03:33:30 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1031 milliseconds
+26/10/20 03:33:32 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1147 milliseconds
+26/10/20 03:33:32 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1465 milliseconds
+26/10/20 03:33:32 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1893 milliseconds
+26/10/20 03:33:33 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1081 milliseconds
+26/10/20 03:33:33 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1061 milliseconds
+26/10/20 03:33:35 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1323 milliseconds
+26/10/20 03:33:35 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1480 milliseconds
+26/10/20 03:33:35 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1647 milliseconds
+26/10/20 03:33:38 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1176 milliseconds
+26/10/20 03:33:38 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1445 milliseconds
+26/10/20 03:33:38 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1609 milliseconds
+26/10/20 03:33:41 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1244 milliseconds
+26/10/20 03:33:41 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1458 milliseconds
+26/10/20 03:33:41 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1636 milliseconds
+26/10/20 03:33:44 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1102 milliseconds
+26/10/20 03:33:44 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1253 milliseconds
+26/10/20 03:33:44 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1630 milliseconds
+26/10/20 03:33:45 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1102 milliseconds
+26/10/20 03:33:45 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1098 milliseconds
+26/10/20 03:33:47 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1188 milliseconds
+26/10/20 03:33:47 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1578 milliseconds
+26/10/20 03:33:47 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1769 milliseconds
+26/10/20 03:33:48 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1005 milliseconds
+26/10/20 03:33:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1030 milliseconds
+26/10/20 03:33:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1362 milliseconds
+26/10/20 03:33:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1610 milliseconds
+26/10/20 03:33:50 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1752 milliseconds
+26/10/20 03:33:51 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1003 milliseconds
+26/10/20 03:33:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1051 milliseconds
+26/10/20 03:33:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1181 milliseconds
+26/10/20 03:33:53 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1453 milliseconds
+26/10/20 03:33:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1121 milliseconds
+26/10/20 03:33:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1190 milliseconds
+26/10/20 03:33:54 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1043 milliseconds
+26/10/20 03:33:56 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1195 milliseconds
+26/10/20 03:33:56 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1429 milliseconds
+26/10/20 03:33:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1076 milliseconds
+26/10/20 03:33:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1167 milliseconds
+26/10/20 03:33:57 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1037 milliseconds
+26/10/20 03:33:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1153 milliseconds
+26/10/20 03:33:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1399 milliseconds
+26/10/20 03:33:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1611 milliseconds
+26/10/20 03:33:59 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1800 milliseconds
+26/10/20 03:34:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1267 milliseconds
+26/10/20 03:34:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1460 milliseconds
+26/10/20 03:34:02 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1662 milliseconds
+26/10/20 03:34:03 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1061 milliseconds
+26/10/20 03:34:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1081 milliseconds
+26/10/20 03:34:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1255 milliseconds
+26/10/20 03:34:05 WARN ProcessingTimeExecutor: Current batch is falling behind. The trigger interval is 1000 milliseconds, but spent 1479 milliseconds
+[post_restart] replay drained (192 batches across 4 queries, 40 files staged)
+[post_restart] stopped cleanly
+26/10/20 03:34:42 WARN StateStore: Error running maintenance thread
+java.lang.IllegalStateException: SparkEnv not active, cannot do maintenance on StateStores
+	at org.apache.spark.sql.execution.streaming.state.StateStore$.doMaintenance(StateStore.scala:632)
+	at org.apache.spark.sql.execution.streaming.state.StateStore$.$anonfun$startMaintenanceIfNeeded$1(StateStore.scala:610)
+	at org.apache.spark.sql.execution.streaming.state.StateStore$MaintenanceTask$$anon$1.run(StateStore.scala:453)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.runAndReset(FutureTask.java:358)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:305)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)

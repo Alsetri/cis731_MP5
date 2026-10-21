@@ -1,0 +1,3 @@
+v1
+{"path":"file:///home/claude/mp5/out/qc_sliding_5m_1m/part-00000-79f90aa6-d555-4591-a3e4-05a4e5ad0ca5-c000.snappy.parquet","size":1553,"isDir":false,"modificationTime":1792467147952,"blockReplication":1,"blockSize":33554432,"action":"add"}
+{"path":"file:///home/claude/mp5/out/qc_sliding_5m_1m/part-00001-fdb6e660-55f8-4fe7-961b-30ddc219e661-c000.snappy.parquet","size":1550,"isDir":false,"modificationTime":1792467148044,"blockReplication":1,"blockSize":33554432,"action":"add"}

@@ -1,0 +1,30 @@
+{
+  "records_total": 1000,
+  "records_admitted": 943,
+  "records_quarantined": 57,
+  "quarantine_rate": 0.057,
+  "violations_by_contract": {
+    "SourceWhitelist": 21,
+    "BoundedChunking": 20,
+    "IngestCausality": 12,
+    "NonEmptyText": 8,
+    "Provenance": 8,
+    "LicenseGate": 8,
+    "TemporalOrdering": 7
+  },
+  "lateness_sec": {
+    "p50": 4.147,
+    "p95": 26.098,
+    "p99": 160.591,
+    "min": 0.212,
+    "max": 592.9,
+    "mean": 10.758,
+    "stddev": 34.591
+  },
+  "watermark_delay_sec": 180,
+  "watermark_rule": "ceil(p99 / 30s) * 30s",
+  "records_beyond_watermark": 8,
+  "completeness_at_watermark": 0.99152,
+  "event_time_span_sec": 2955.0,
+  "distinct_source_ids": 597
+}
